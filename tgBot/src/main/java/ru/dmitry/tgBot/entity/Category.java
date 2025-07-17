@@ -1,9 +1,7 @@
-package ru.dmitry.tgBot;
+package ru.dmitry.tgBot.entity;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -39,6 +37,7 @@ public class Category {
     @Override
     public String toString() {
         return "Category{" +
+
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", parent=" + parent +

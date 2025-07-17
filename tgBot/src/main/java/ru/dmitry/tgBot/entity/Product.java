@@ -1,8 +1,7 @@
-package ru.dmitry.tgBot;
+package ru.dmitry.tgBot.entity;
 
 import jakarta.persistence.*;
 
-import java.util.List;
 import java.util.Objects;
 
 @Entity

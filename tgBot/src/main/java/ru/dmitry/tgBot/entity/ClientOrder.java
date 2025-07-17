@@ -1,4 +1,4 @@
-package ru.dmitry.tgBot;
+package ru.dmitry.tgBot.entity;
 
 import jakarta.persistence.*;
 
