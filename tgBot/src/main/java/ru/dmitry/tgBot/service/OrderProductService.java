@@ -5,5 +5,6 @@ import ru.dmitry.tgBot.entity.Product;
 import java.util.List;
 
 public interface OrderProductService {
-    public List<Product> getClientProducts(Long clientId);
+
+    List<Product> getClientProducts(Long clientId);
 }

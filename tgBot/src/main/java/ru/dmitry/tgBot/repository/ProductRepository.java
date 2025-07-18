@@ -3,7 +3,6 @@ package ru.dmitry.tgBot.repository;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import ru.dmitry.tgBot.entity.Product;
 
@@ -25,5 +24,4 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
             "(:categoryId IS NULL OR p.category.id = :categoryId)")
     List<Product> searchProducts(String name, Long categoryId);
 
-    Product getProductByName(String productName);
 }

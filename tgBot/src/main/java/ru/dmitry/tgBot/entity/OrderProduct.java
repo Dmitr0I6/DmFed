@@ -18,7 +18,7 @@ public class OrderProduct {
     private Product product;
 
     @Column(nullable = false)
-    private Long countProduct;
+    private Integer countProduct;
 
     @Override
     public String toString() {
@@ -33,7 +33,7 @@ public class OrderProduct {
     public OrderProduct() {
     }
 
-    public OrderProduct(Long id, ClientOrder clientOrder, Long countProduct, Product product) {
+    public OrderProduct(Long id, ClientOrder clientOrder, Integer countProduct, Product product) {
         this.id = id;
         this.clientOrder = clientOrder;
         this.countProduct = countProduct;
@@ -61,11 +61,11 @@ public class OrderProduct {
         this.id = id;
     }
 
-    public Long getCountProduct() {
+    public Integer getCountProduct() {
         return countProduct;
     }
 
-    public void setCountProduct(Long countProduct) {
+    public void setCountProduct(Integer countProduct) {
         this.countProduct = countProduct;
     }
 
