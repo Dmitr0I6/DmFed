@@ -1,6 +1,7 @@
 package ru.dmitry.tgBot.service.impl;
 
 import org.springframework.stereotype.Service;
+import ru.dmitry.tgBot.entity.OrderProduct;
 import ru.dmitry.tgBot.entity.Product;
 import ru.dmitry.tgBot.repository.OrderProductRepository;
 import ru.dmitry.tgBot.service.OrderProductService;
@@ -12,7 +13,7 @@ public class OrderProductServiceImpl implements OrderProductService {
 
     private final OrderProductRepository orderProductRepository;
 
-    public OrderProductServiceImpl(OrderProductRepository orderProductRepository){
+    public OrderProductServiceImpl(OrderProductRepository orderProductRepository) {
         this.orderProductRepository = orderProductRepository;
     }
 

@@ -7,4 +7,5 @@ import java.util.List;
 public interface ClientOrderService {
 
     List<ClientOrder> getClientOrders(Long clientId);
+
 }

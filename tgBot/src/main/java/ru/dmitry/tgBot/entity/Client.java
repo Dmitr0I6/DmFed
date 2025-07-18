@@ -23,7 +23,7 @@ public class Client {
     @Column(nullable = false, length = 15)
     private String phoneNumber;
 
-    @Column(nullable = false,length = 400)
+    @Column(nullable = false, length = 400)
     private String address;
 
     public Client(Long id, Long externalId, String fullName, String phoneNumber, String address) {
